@@ -1,124 +1,132 @@
-* {
-  margin:0;
-  padding:0;
+html {
+  font-size: 15px;
 }
+main {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(216, 12%, 8%);
+  font-family: 'Overpass', sans-serif;
+}
+
 
 .container {
-  width:100%;
-  height:100vh;
-  font-family: 'Overpass', sans-serif;
-  background-color: hsl(216, 12%, 8%);
-  display:flex;
-  justify-content:center;
-  align-items:center;
+  min-width: 21.8rem;
+  min-height: 24rem;
+  background-color: hsl(213, 19%, 18%);
+  border-radius: 1rem;
+  margin: 0 10rem;
 }
 
-
-
-.main_box {
-  background: radial-gradient(circle at top, rgba(124,135,152,0.3) 3%, rgba(37,45,55,0.4) 100%);
-  /* margin: 25px; */
-  border-radius: 20px;
-  width: 30%;
-  height:60%;
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  flex-direction: column;
-
+.container img {
+  display:block;
+  padding: 0.5rem;
 }
 
-.icon_star {
-  position: relative;
-  bottom: 15px;
-  right: 180px;
-  padding: 8px;
-  height: 17px;
-  width: 17px;
-  padding:15px;
-  display:flex;
-
+.star {
+  background-color: hsl(213, 19%, 18%);
+  border-radius: 50%;
+  display:inline-block;
+  max-height:3rem;
+  max-width:3rem;
+  margin-top: 2rem;
+  margin-left: 2rem;
+  margin-bottom: 2rem;
 }
 
-.rating_text {
-  padding:50px;
+h1 {
+  padding: 0 1.6rem 0.5rem 1.6rem;
+  font-weight: 700;
+  color:hsl(0, 0%, 100%);
+  font-size:1.6rem;
 }
 
-.rating_text h1 {
-  color: hsl(0, 0%, 100%);
-}
-
-.rating_text p {
-  font-size: 15px;
+p {
+  padding: 0 1.6rem 1rem 1.6rem;
+  font-weight: 400;
   color: hsl(217, 12%, 63%);
-  /* max-width: 60%; */
-  padding: 25px;
-
+  margin-bottom: 0.5rem;
+  font-size:0.9333rem;
+  line-height: 1.47rem
 }
 
-
-.rating_score {
-  font-family: 'Overpass', sans-serif;
-  list-style:none;
-  display:flex;
-  flex-direction: row;
-  justify-content: space-between;
-
-}
-
-.rating_score li {
-  width: 60px;
-  height: 60px;
-  color: hsl(217, 12%, 63%);
-  font-size: 20px;
+ul {
+  margin: 0.5rem 1rem 2rem 1rem;
+  padding: 0;
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  justify-content:space-around;
+  /* max-width: 90%; */
 }
 
-.rating_score li:hover {
-  cursor: pointer;
-  color: hsl(0, 0%, 100%);
-  background-color:hsl(25, 97%, 53%);
-}
-
-.rating_score li:active {
-  background-color:hsl(217, 12%, 63%);
-}
-
-.rating_score li:active, .rating_score li:hover {
-  cursor: pointer;
-  color: hsl(0, 0%, 100%);
-
-}
-
-
-.icon_star, .rating_score li {
-  background-color: hsl(216, 12%, 54%, 0.1);
+ul li {
+  height: 2.9rem;
+  width: 2.9rem;
+  list-style-type: none;
+  color:hsl(217, 12%, 63%);
+  display:block;
+  padding: 0.8rem;
   border-radius: 50%;
+  background-color: hsla(216, 12%, 54%, 0.2);
+  text-align: center;
 }
 
-.button_section {
-
-}
-
-.submit_button {
-  color: hsl(0, 0%, 100%);
-  font-family: 'Overpass', sans-serif;
-  text-transform: uppercase;
-  background-color:hsl(25, 97%, 53%);
-  width: 25rem;
-  height: 2.5rem;
-  border: 0;
-  border-radius: 50px;
-
-
-}
-
-.submit_button:hover {
-  background-color:hsl(0, 0%, 100%);
-  color: hsl(25, 97%, 53%);
+ul li:hover {
   cursor: pointer;
+  background-color: hsl(217, 12%, 63%);
+  color: hsl(0, 0%, 100%);
+}
 
+
+
+.rated {
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(25, 97%, 53%);
+  }
+
+
+button {
+ display:block;
+ min-width: 18.6rem;
+ margin: 1rem auto;
+ padding: 0.75rem 2rem;
+ border: none;
+ border-radius:2rem;
+ background-color: hsl(25, 97%, 53%);
+ cursor: pointer;
+ text-transform: uppercase;
+ color: white;
+ letter-spacing: 0.1246rem;
+ font-size: 0.933rem;
+}
+
+button:hover {
+  background-color: hsl(0, 0%, 100%);
+  color:hsl(25, 97%, 53%);
+}
+
+.attribution {
+  color: hsl(0, 0%, 100%);
+  font-size: 11px;
+  text-align: center;
+  padding-top: 0.5rem;
+}
+    
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+
+@media screen and (min-width: 620px) {
+  .container {
+      min-width: 27.47rem;
+      min-height: 27.7rem;
+      max-width: 27.47rem;
+      max-height: 27.7rem;
+      background-color: hsl(213, 19%, 18%);
+      border-radius: 1rem;
+      margin: 0 10rem;
+    }
 }
