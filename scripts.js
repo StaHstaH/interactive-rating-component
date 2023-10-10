@@ -8,6 +8,8 @@
 // make it possible to unclick the item
 // when another item is clicked, clear selection of the currently clicked one
 
+
+        let selectedIndex = -1;
 // Get the <ul> element
         var ul = document.getElementById("rating");
 
@@ -16,16 +18,28 @@
 
         // Add an event listener to each <li> element
         for (var i = 0; i < liElements.length; i++) {
+            let index = i;
             liElements[i].addEventListener("click", function() {
                 // Apply a specific class on click
                 this.classList.add("rated");
 
+                if(selectedIndex === index) {
+                    this.classList.remove("rated")
+                    selectedIndex = -1;
+                } else if (selectedIndex !== -1) {
+                    let otherItem = document.getElementById("item" + (selectedIndex + 1));
+                    otherItem.classList.remove("rated");
+                    selectedIndex = index;
+                }                
+                else {
+                    selectedIndex = index;
+                }
                 // Get the ID of the clicked <li> element
                 var itemId = this.getAttribute("id");
 
                 // If the <li> element doesn't have an ID, create one
                 if (!itemId) {
-                    itemId = "item" + (i + 1);
+                    itemId = "item" + (index + 1);
                     this.setAttribute("id", itemId);
                 }
 
