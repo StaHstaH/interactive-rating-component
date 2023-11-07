@@ -20,7 +20,7 @@
 
   <!-- Rating state start -->
 <main>
-  <div class="container">
+  <div id="rate" class="container">
   <div class="star"><img src="images/icon-star.svg"></div>
       <!-- <div class="rating_text"> -->
 
@@ -38,29 +38,33 @@
 
       <!-- </div> -->
       <!-- <div class="button_section"> -->
-        <button type="submit" class="submit_button">Submit</button>
+        <button id="button" type="submit" class="submit_button" disabled>Submit</button>
       <!-- </div> -->
 
 
 
   </div>
+
+    <!-- Rating state end -->
+    
+    <!-- Thank you state start -->
+    <div id="thank-you" class="thank-you hide">
+      <img src="/images/illustration-thank-you.svg" >
+      <p><span id="rated">You selected <span id="selected-rating"></span>  out of 5</span></p>
+    
+      <h1>Thank you!</h1>
+    
+     <p> We appreciate you taking the time to give a rating. If you ever need more support,
+      don't hesitate to get in touch!</p>
+    
+      <!-- Thank you state end -->
+    </div>
+
     <div class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
       Coded by <a href="#">Stanisław S.</a>
     </div>
 </main>
-  <!-- Rating state end -->
-
-  <!-- Thank you state start -->
-
-  <!-- You selected  Add rating here-turn it into a comment later  out of 5
-
-  Thank you!
-
-  We appreciate you taking the time to give a rating. If you ever need more support,
-  don’t hesitate to get in touch! -->
-
-  <!-- Thank you state end -->
 
 
 <script src="scripts.js"></script>
