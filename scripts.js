@@ -59,9 +59,6 @@ for (var i = 0; i < liElements.length; i++) {
   });
 }
 
-// let span = document.getElementById("rating");
-// span.innerHTML = "Clicked item with ID: " + itemId;
-
 var rate = document.getElementById("rate");
 var thankYou = document.getElementById("thank-you");
 var button = document.getElementById("button");
