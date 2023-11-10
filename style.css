@@ -1,3 +1,15 @@
+:root {
+  --white: hsl(0, 0%, 100%);
+  --black: hsl(0, 0%, 0%);
+  --lightgrey: hsl(217, 12%, 63%);
+  --mediumgrey: hsl(216, 12%, 54%);
+  --mgreyopacity: hsla(216, 12%, 54%, 0.2);
+  --darkblue: hsl(213, 19%, 18%);
+  --verydarkblue: hsl(216, 12%, 8%);
+  --orange: hsl(25, 97%, 53%);
+  --navyblue: hsl(228, 45%, 44%);
+}
+
 html {
   font-size: 15px;
 }
@@ -7,22 +19,22 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: hsl(216, 12%, 8%);
+  background-color: var(--black);
   font-family: 'Overpass', sans-serif;
 }
 
 
 .container, .thank-you {
   min-width: 21.8rem;
-  min-height: 24rem;
-  background-color: hsl(213, 19%, 18%);
+  /* min-height: 24rem; */
+  background-color: var(--darkblue);
   border-radius: 1rem;
   margin: 0 10rem;
 }
 
 .container img {
   display:block;
-  padding: 0.5rem;
+  padding: 1rem;
 }
 
 .thank-you {
@@ -37,8 +49,8 @@ main {
 
 #rated {
   display:inline-block;
-  color: hsl(25, 97%, 53%);
-  background-color: hsla(216, 12%, 54%, 0.2);
+  color: --orange;
+  background-color: var(--mgreyopacity);
   padding: 0.5rem 1.75rem;
   margin-top: 1.75rem;
   font-weight: 400;
@@ -55,27 +67,26 @@ main {
 }
 
 .star {
-  background-color: hsl(213, 19%, 18%);
+  background: var(--mgreyopacity);
   border-radius: 50%;
-  display:inline-block;
-  max-height:3rem;
-  max-width:3rem;
-  margin-top: 2rem;
-  margin-left: 2rem;
-  margin-bottom: 2rem;
+  height:3rem;
+  width:3rem;
+  margin-top: 1.5rem;
+  margin-left: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 h1 {
   padding: 0 1.6rem 0.5rem 1.6rem;
   font-weight: 700;
-  color:hsl(0, 0%, 100%);
+  color:var(--white);
   font-size:1.6rem;
 }
 
 p {
   padding: 0 1.6rem 1rem 1.6rem;
   font-weight: 400;
-  color: hsl(217, 12%, 63%);
+  color: var(--lightgrey);
   margin-bottom: 0.5rem;
   font-size:0.9333rem;
   line-height: 1.47rem
@@ -88,24 +99,23 @@ ul {
   display: flex;
   flex-direction: row;
   justify-content:space-around;
-  /* max-width: 90%; */
 }
 
 ul li {
   height: 2.9rem;
   width: 2.9rem;
   list-style-type: none;
-  color:hsl(217, 12%, 63%);
+  color:var(--lightgrey);
   display:block;
   padding: 0.8rem;
   border-radius: 50%;
-  background-color: hsla(216, 12%, 54%, 0.2);
+  background-color: var(--mgreyopacity);
   text-align: center;
 }
 
 ul li:hover {
   cursor: pointer;
-  background-color: hsl(217, 12%, 63%);
+  background-color: var(--lightgrey);
   color: hsl(0, 0%, 100%);
 }
 
@@ -113,39 +123,39 @@ ul li:hover {
 
 .rated {
   color: hsl(0, 0%, 100%);
-  background-color: hsl(25, 97%, 53%);
+  background-color: var(--orange);
   }
 
 
 button {
  display:block;
  min-width: 18.6rem;
- margin: 1rem auto;
+ margin: 1rem auto 2rem auto;
  padding: 0.75rem 2rem;
  border: none;
  border-radius:2rem;
- background-color: hsl(25, 97%, 53%);
+ background-color: var(--orange);
  cursor: pointer;
  text-transform: uppercase;
- color: white;
+ color: var(--white);
  letter-spacing: 0.1246rem;
  font-size: 0.933rem;
 }
 
 button:hover {
-  background-color: hsl(0, 0%, 100%);
-  color:hsl(25, 97%, 53%);
+  background-color: var(--white);
+  color:var(--orange);
 }
 
 .attribution {
-  color: hsl(0, 0%, 100%);
+  color: var(--white);
   font-size: 11px;
   text-align: center;
   padding-top: 0.5rem;
 }
     
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: var(--navyblue);
 }
 
 
@@ -155,7 +165,7 @@ button:hover {
       min-height: 27.7rem;
       max-width: 27.47rem;
       max-height: 27.7rem;
-      background-color: hsl(213, 19%, 18%);
+      background-color: var(--darkblue);
       border-radius: 1rem;
       margin: 0 10rem;
     }
