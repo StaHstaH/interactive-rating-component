@@ -13,6 +13,7 @@
 html {
   font-size: 15px;
 }
+
 main {
   height: 100vh;
   display: flex;
@@ -24,31 +25,31 @@ main {
 }
 
 
-.container, .thank-you {
+.container,
+.thank-you {
   min-width: 21.8rem;
-  /* min-height: 24rem; */
   background-color: var(--darkblue);
   border-radius: 1rem;
   margin: 0 10rem;
 }
 
 .container img {
-  display:block;
+  display: block;
   padding: 1rem;
 }
 
 .thank-you {
-  text-align:center;
+  text-align: center;
   padding: 2rem;
 }
 
 .thank-you img {
   padding: 0rem 3rem;
-  text-align:center;
+  text-align: center;
 }
 
 #rated {
-  display:inline-block;
+  display: inline-block;
   color: --orange;
   background-color: var(--mgreyopacity);
   padding: 0.5rem 1.75rem;
@@ -59,18 +60,18 @@ main {
 }
 
 .hide {
-  display:none;
+  display: none;
 }
 
 .show {
-  display:unset;
+  display: unset;
 }
 
 .star {
   background: var(--mgreyopacity);
   border-radius: 50%;
-  height:3rem;
-  width:3rem;
+  height: 3rem;
+  width: 3rem;
   margin-top: 1.5rem;
   margin-left: 1.5rem;
   margin-bottom: 1rem;
@@ -79,8 +80,8 @@ main {
 h1 {
   padding: 0 1.6rem 0.5rem 1.6rem;
   font-weight: 700;
-  color:var(--white);
-  font-size:1.6rem;
+  color: var(--white);
+  font-size: 1.6rem;
 }
 
 p {
@@ -88,7 +89,7 @@ p {
   font-weight: 400;
   color: var(--lightgrey);
   margin-bottom: 0.5rem;
-  font-size:0.9333rem;
+  font-size: 0.9333rem;
   line-height: 1.47rem
 }
 
@@ -98,15 +99,15 @@ ul {
   padding: 0;
   display: flex;
   flex-direction: row;
-  justify-content:space-around;
+  justify-content: space-around;
 }
 
 ul li {
   height: 2.9rem;
   width: 2.9rem;
   list-style-type: none;
-  color:var(--lightgrey);
-  display:block;
+  color: var(--lightgrey);
+  display: block;
   padding: 0.8rem;
   border-radius: 50%;
   background-color: var(--mgreyopacity);
@@ -124,27 +125,27 @@ ul li:hover {
 .rated {
   color: hsl(0, 0%, 100%);
   background-color: var(--orange);
-  }
+}
 
 
 button {
- display:block;
- min-width: 18.6rem;
- margin: 1rem auto 2rem auto;
- padding: 0.75rem 2rem;
- border: none;
- border-radius:2rem;
- background-color: var(--orange);
- cursor: pointer;
- text-transform: uppercase;
- color: var(--white);
- letter-spacing: 0.1246rem;
- font-size: 0.933rem;
+  display: block;
+  min-width: 18.6rem;
+  margin: 1rem auto 2rem auto;
+  padding: 0.75rem 2rem;
+  border: none;
+  border-radius: 2rem;
+  background-color: var(--orange);
+  cursor: pointer;
+  text-transform: uppercase;
+  color: var(--white);
+  letter-spacing: 0.1246rem;
+  font-size: 0.933rem;
 }
 
 button:hover {
   background-color: var(--white);
-  color:var(--orange);
+  color: var(--orange);
 }
 
 .attribution {
@@ -153,20 +154,34 @@ button:hover {
   text-align: center;
   padding-top: 0.5rem;
 }
-    
+
 .attribution a {
   color: var(--navyblue);
 }
 
 
-@media screen and (min-width: 620px) {
-  .container {
-      min-width: 27.47rem;
-      min-height: 27.7rem;
-      max-width: 27.47rem;
-      max-height: 27.7rem;
-      background-color: var(--darkblue);
-      border-radius: 1rem;
-      margin: 0 10rem;
-    }
+@media screen and (min-width: 690px) {
+
+  .container,
+  .thank-you {
+    background-color: var(--darkblue);
+    border-radius: 1rem;
+    margin: 0 10rem;
+    padding: 0.5rem;
+    max-width: 27.5rem;
+    line-height: 160%;
+  }
+
+  h1 {
+    padding-bottom: 1rem;
+  }
+
+  p {
+    padding: 2rem;
+    font-weight: 400;
+    color: var(--lightgrey);
+    margin-bottom: 0.5rem;
+    font-size: 0.9333rem;
+    line-height: 1.47rem
+  }
 }
