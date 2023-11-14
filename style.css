@@ -31,17 +31,6 @@ main {
   background-color: var(--darkblue);
   border-radius: 1rem;
   margin: 0 10rem;
-  background-image: radial-gradient(180deg,
-      hsl(215deg 20% 17%) 0%,
-      hsl(215deg 20% 17%) 11%,
-      hsl(215deg 21% 16%) 22%,
-      hsl(215deg 22% 15%) 33%,
-      hsl(214deg 21% 15%) 44%,
-      hsl(218deg 22% 15%) 56%,
-      hsl(216deg 21% 14%) 67%,
-      hsl(214deg 24% 13%) 78%,
-      hsl(216deg 23% 13%) 89%,
-      hsl(216deg 24% 12%) 100%);
 }
 
 .container img {
